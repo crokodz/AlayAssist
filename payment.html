@@ -1,0 +1,168 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="margin:0px;">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="position: absolute;top:0px;left:0px;width:1200px;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">AlayAssist</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="home.html">Home</a></li>
+          <li><a href="register.html">User Management</a></li>
+        </ul>
+        <ul class="nav navbar-nav" style="float:right">
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+        <img src="images/register.jpg">
+    </div>
+    <div class="form-group" style="position: absolute;top:80px;left:80px;border: 1px solid #FFF;width:1040px;height:780px;padding:8px;background-color: #FFF;border-radius: 5px;">
+      <div class="container">
+  <ul class="nav nav-tabs" style="width:1000px;">
+    <li><a href="home.html">Outstanding Visits</a></li>
+    <li class="active"><a href="payment.html">Approved Payment</a></li>
+  </ul>
+        <h2>Visit's</h2>
+        <table class="table table-striped" style="width:990px;font-size: 12px;">
+          <thead>
+            <tr>
+              <th style="text-align: left;">Client</th>
+              <th style="text-align: left;">Service<br>Code</th>
+              <th style="text-align: left;">Scheduled<br>Notes</th>
+              <th style="text-align: left;">Delivered<br>Visit Date</th>
+              <th style="text-align: left;">Delivered<br>Visit Start</th>
+              <th style="text-align: left;">Delivered<br>Visit End</th>
+              <th style="text-align: left;">Delivered KM's</th>
+              <th style="text-align: left;">Approved<br>Visit Date</th>
+              <th style="text-align: left;">Approved<br>Visit Start</th>
+              <th style="text-align: left;">Approved<br>Visit End</th>
+              <th style="text-align: left;">Approved KM's</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-toggle="modal" data-target="#myModal3">
+              <td>Paul Mendoza</td>
+              <td>9</td>
+              <td>Scheduled Note 3</td>
+              <td>Nov 20 2018</td>
+              <td>2:00 PM</td>
+              <td>4:00 PM</td>
+              <td>20</td>
+              <td>Nov 27 2018</td>
+              <td>10:00 AM</td>
+              <td>11:30 AM</td>
+              <td>23</td>
+            </tr>
+            <tr data-toggle="modal" data-target="#myModal3">
+              <td>Bensil Austin</td>
+              <td>10</td>
+              <td>Scheduled Note 10</td>
+              <td>Nov 22 2018</td>
+              <td>1:00 PM</td>
+              <td>3:00 PM</td>
+              <td>20</td>
+              <td>Nov 28 2018</td>
+              <td>10:00 AM</td>
+              <td>11:30 AM</td>
+              <td>23</td>
+            </tr>
+            <tr data-toggle="modal" data-target="#myModal3">
+              <td>Celine Dion</td>
+              <td>91</td>
+              <td>Scheduled Note 10</td>
+              <td>Nov 24 2018</td>
+              <td>2:00 PM</td>
+              <td>3:00 PM</td>
+              <td>20</td>
+              <td>Nov 28 2018</td>
+              <td>9:00 AM</td>
+              <td>10:30 AM</td>
+              <td>23</td>
+            </tr>
+            <tr data-toggle="modal" data-target="#myModal3">
+              <td>Karen Davila</td>
+              <td>39</td>
+              <td>Scheduled Note 39</td>
+              <td>Nov 27 2018</td>
+              <td>2:00 PM</td>
+              <td>4:00 PM</td>
+              <td>20</td>
+              <td>Nov 27 2018</td>
+              <td>10:00 AM</td>
+              <td>11:30 AM</td>
+              <td>23</td>
+            </tr>
+            <tr data-toggle="modal" data-target="#myModal3">
+              <td>Nick Jackson</td>
+              <td>34</td>
+              <td>Scheduled Note 34</td>
+              <td>Nov 20 2018</td>
+              <td>2:00 PM</td>
+              <td>4:00 PM</td>
+              <td>20</td>
+              <td>Nov 25 2018</td>
+              <td>10:00 AM</td>
+              <td>11:30 AM</td>
+              <td>23</td>
+            </tr>
+            <tr data-toggle="modal" data-target="#myModal3">
+              <td>Alvin Chippy</td>
+              <td>35</td>
+              <td>Scheduled Note 35</td>
+              <td>Nov 20 2018</td>
+              <td>2:00 PM</td>
+              <td>4:00 PM</td>
+              <td>20</td>
+              <td>Nov 27 2018</td>
+              <td>10:00 AM</td>
+              <td>11:30 AM</td>
+              <td>23</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</body>
+
+<div id="myModal3" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Client Name</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>Scheduler Code:</p>
+        <p>Service Notes:</p>
+        <p>Schedule Visit Date: <b>November 22, 2018</b></p>
+        <p>Schedule Visit Start: <b>2:00 PM</b></p>
+        <p>Schedule Visit End: <b>4:00 PM</b></p>
+        <hr>
+        <p>Delivered Visit Date:
+          <input class="form-control" disabled="true" style="width:200px" type="date" name="bday"></p>
+        <p>Delivered Visit Start:
+          <input class="form-control" disabled="true" style="width:200px" type="time" name="bday"></p>
+        <p>Delivered Visit End:
+          <input class="form-control" disabled="true" style="width:200px" type="time" name="bday"></p>
+        <p>KM's:</p>
+          <input class="form-control" disabled="true" style="width:200px" type="text" name="bday"></p>
+        <p>Visit Note:</p>
+        <textarea class="form-control" disabled="true" rows="5" id="comment"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div style="position: absolute;top:870px;left:480px;color:#fff;">
+  Powered by Care in the Cloud <a href="http://www.careinthecloud.net/"><img src="images/citc.png" style="width:50px;"></img></a>
+</div>

@@ -1,0 +1,388 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="margin:0px;">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="position: absolute;top:0px;left:0px;width:1200px;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">AlayAssist</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="home.html">Home</a></li>
+          <li><a href="register.html">User Management</a></li>
+        </ul>
+        <ul class="nav navbar-nav" style="float:right">
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+        <img src="images/register.jpg">
+    </div>
+    <div class="form-group" style="position: absolute;top:80px;left:80px;border: 1px solid #FFF;width:1040px;height:780px;padding:8px;background-color: #FFF;border-radius: 5px;">
+      <div class="container">
+  <ul class="nav nav-tabs" style="width:1000px;">
+    <li class="active"><a href="home.html">Outstanding Visits</a></li>
+    <li><a href="payment.html">Approved Payment</a></li>
+  </ul>
+        <h2>Visit's</h2>
+        <p>Today's Visit's: <b>December 7, 2018</b></p>
+        <table class="table table-striped" style="width:990px;font-size: 12px;">
+          <thead>
+            <tr>
+              <th style="text-align: left;">Client</th>
+              <th style="text-align: left;">Service<br>Code</th>
+              <th style="text-align: left;">Scheduled<br>Visit Notes</th>
+              <th style="text-align: left;">Scheduled<br>Visit Start</th>
+              <th style="text-align: left;">Scheduled<br>Visit End</th>
+              <th style="text-align: left;">Delivered<br>Visit Date</th>
+              <th style="text-align: left;">Delivered<br>Visit Start</th>
+              <th style="text-align: left;">Delivered<br>Visit End</th>
+              <th style="text-align: left;">KM's</th>
+              <th style="text-align: left;width:100px;">Visit<br>Notes</th>
+              <th style="text-align: left;width:0px;">Scheduled</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-toggle="modal" data-target="#myModal4">
+              <td>Mitch Vold</td>
+              <td>4</td>
+              <td>Needed an assistant. Bring you tools</td>
+              <td>9:00 AM</td>
+              <td>12:00 PM</td>
+              <td>07-12-18</td>
+              <td>8:00 AM</td>
+              <td>10:00 AM</td>
+              <td>Still has a problem</td>
+              <td>12</td>
+              <td style="text-align: center;"><i style="font-size: 16px;" class="fas fa-check"></i></td>
+            </tr>
+            <tr data-toggle="modal" data-target="#myModal5">
+              <td>Wick Mandy</td>
+              <td>5</td>
+              <td>Bring cleaning tools</td>
+              <td>1:00 PM</td>
+              <td>2:00 PM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-align: center;"></td>
+            </tr>
+            <tr data-toggle="modal" data-target="#myModal6">
+              <td>Sam Francland</td>
+              <td>6</td>
+              <td>Note 3</td>
+              <td>2:00 PM</td>
+              <td>4:00 PM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-align: center;"></td>
+            </tr>
+            <tr data-toggle="modal" data-target="#myModal7">
+              <td>Todd Sandiford</td>
+              <td>7</td>
+              <td>Needed a ladder</td>
+              <td>2:00 PM</td>
+              <td>4:00 PM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-align: center;"></td>
+            </tr>
+            <tr data-toggle="modal" data-target="#myModal1">
+              <td>John Doe</td>
+              <td>1</td>
+              <td>Note 1</td>
+              <td>9:00 AM</td>
+              <td>12:00 PM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-align: center;"><i style="font-size: 16px;" class="fas fa-check"></i></td>
+            </tr>
+            <tr data-toggle="modal" data-target="#myModal2">
+              <td>Mary Moe</td>
+              <td>2</td>
+              <td>Note 2</td>
+              <td>1:00 PM</td>
+              <td>2:00 PM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-align: center;"><i style="font-size: 16px;" class="fas fa-check"></i></td>
+            </tr>
+            <tr data-toggle="modal" data-target="#myModal3">
+              <td>July Dooley</td>
+              <td>3</td>
+              <td>Note 3</td>
+              <td>2:00 PM</td>
+              <td>4:00 PM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td style="text-align: center;"><i style="font-size: 16px;" class="fas fa-check"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</body>
+
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>John Doe</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>Scheduler Code:</p>
+        <p>Service Notes:</p>
+        <p>Schedule Visit Date: <b>December 7, 2018</b></p>
+        <p>Schedule Visit Start: <b>9:00 AM</b></p>
+        <p>Schedule Visit End: <b>12:00 PM</b></p>
+        <hr>
+        <p>Delivered Visit Date:
+          <input class="form-control" style="width:200px" type="date" name="bday"></p>
+        <p>Delivered Visit Start:
+          <input class="form-control" style="width:200px" type="time" name="bday"></p>
+        <p>Delivered Visit End:
+          <input class="form-control" style="width:200px" type="time" name="bday"></p>
+        <p>KM's:</p>
+          <input class="form-control" style="width:200px" type="text" name="bday"></p>
+        <p>Visit Notes:</p>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Mary Moe</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>Scheduler Code:</p>
+        <p>Service Notes:</p>
+        <p>Schedule Visit Date: <b>December 7, 2018</b></p>
+        <p>Schedule Visit Start: <b>1:00 PM</b></p>
+        <p>Schedule Visit End: <b>2:00 PM</b></p>
+        <hr>
+        <p>Delivered Visit Date:
+          <input class="form-control" style="width:200px" type="date" name="bday"></p>
+        <p>Delivered Visit Start:
+          <input class="form-control" style="width:200px" type="time" name="bday"></p>
+        <p>Delivered Visit End:
+          <input class="form-control" style="width:200px" type="time" name="bday"></p>
+        <p>KM's:</p>
+          <input class="form-control" style="width:200px" type="text" name="bday"></p>
+        <p>Visit Note:</p>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="myModal3" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>July Dooley</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>Scheduler Code:</p>
+        <p>Service Notes:</p>
+        <p>Schedule Visit Date: <b>December 7, 2018</b></p>
+        <p>Schedule Visit Start: <b>2:00 PM</b></p>
+        <p>Schedule Visit End: <b>4:00 PM</b></p>
+        <hr>
+        <p>Delivered Visit Date:
+          <input class="form-control" style="width:200px" type="date" name="bday"></p>
+        <p>Delivered Visit Start:
+          <input class="form-control" style="width:200px" type="time" name="bday"></p>
+        <p>Delivered Visit End:
+          <input class="form-control" style="width:200px" type="time" name="bday"></p>
+        <p>KM's:</p>
+          <input class="form-control" style="width:200px" type="text" name="bday"></p>
+        <p>Visit Note:</p>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="myModal4" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Mitch Vold</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>Scheduler Code:</p>
+        <p>Service Notes: Needed an assistant. Bring you tools</p>
+        <p>Schedule Visit Date: <b>December 7, 2018</b></p>
+        <p>Schedule Visit Start: <b>2:00 PM</b></p>
+        <p>Schedule Visit End: <b>4:00 PM</b></p>
+        <hr>
+        <p>Delivered Visit Date:
+          <input class="form-control" style="width:200px" type="date" name="bday" value="2018-12-07"></p>
+        <p>Delivered Visit Start:
+          <input class="form-control" style="width:200px" type="time" name="bday" value="08:00:00"></p>
+        <p>Delivered Visit End:
+          <input class="form-control" style="width:200px" type="time" name="bday" value="10:00:00"></p>
+        <p>KM's:</p>
+          <input class="form-control" style="width:200px" type="text" name="bday" value="12"></p>
+        <p>Visit Note:</p>
+        <textarea class="form-control" rows="5" id="comment">Still has a problem</textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="myModal5" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Wick Mandy</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>Scheduler Code:</p>
+        <p>Service Notes:</p>
+        <p>Schedule Visit Date: <b>December 7, 2018</b></p>
+        <p>Schedule Visit Start: <b>2:00 PM</b></p>
+        <p>Schedule Visit End: <b>4:00 PM</b></p>
+        <hr>
+        <p>Delivered Visit Date:
+          <input class="form-control" style="width:200px" type="date" name="bday"></p>
+        <p>Delivered Visit Start:
+          <input class="form-control" style="width:200px" type="time" name="bday"></p>
+        <p>Delivered Visit End:
+          <input class="form-control" style="width:200px" type="time" name="bday"></p>
+        <p>KM's:</p>
+          <input class="form-control" style="width:200px" type="text" name="bday"></p>
+        <p>Visit Note:</p>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="myModal6" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Sam Francland</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>Scheduler Code:</p>
+        <p>Service Notes:</p>
+        <p>Schedule Visit Date: <b>December 7, 2018</b></p>
+        <p>Schedule Visit Start: <b>2:00 PM</b></p>
+        <p>Schedule Visit End: <b>4:00 PM</b></p>
+        <hr>
+        <p>Delivered Visit Date:
+          <input class="form-control" style="width:200px" type="date" name="bday"></p>
+        <p>Delivered Visit Start:
+          <input class="form-control" style="width:200px" type="time" name="bday"></p>
+        <p>Delivered Visit End:
+          <input class="form-control" style="width:200px" type="time" name="bday"></p>
+        <p>KM's:</p>
+          <input class="form-control" style="width:200px" type="text" name="bday"></p>
+        <p>Visit Note:</p>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="myModal7" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><b>Todd Sandiford</b></h4>
+      </div>
+      <div class="modal-body">
+        <p>Scheduler Code:</p>
+        <p>Service Notes:</p>
+        <p>Schedule Visit Date: <b>December 7, 2018</b></p>
+        <p>Schedule Visit Start: <b>2:00 PM</b></p>
+        <p>Schedule Visit End: <b>4:00 PM</b></p>
+        <hr>
+        <p>Delivered Visit Date:
+          <input class="form-control" style="width:200px" type="date" name="bday"></p>
+        <p>Delivered Visit Start:
+          <input class="form-control" style="width:200px" type="time" name="bday"></p>
+        <p>Delivered Visit End:
+          <input class="form-control" style="width:200px" type="time" name="bday"></p>
+        <p>KM's:</p>
+          <input class="form-control" style="width:200px" type="text" name="bday"></p>
+        <p>Visit Note:</p>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div style="position: absolute;top:870px;left:480px;color:#fff;">
+  Powered by Care in the Cloud <a href="http://www.careinthecloud.net/"><img src="images/citc.png" style="width:50px;"></img></a>
+</div>
